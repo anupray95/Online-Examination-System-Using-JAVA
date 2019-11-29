@@ -1,0 +1,98 @@
+#filters {
+	margin: 1%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+#filters li {
+	display: inline-block;
+}
+#filters li span {
+	display: block;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #222222;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+#filters li span.active {
+	color: #000;
+	font-weight: 700;
+}
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 31%;
+	margin: 1%;
+	display: none;
+	float: left;
+	overflow: hidden;
+}
+.portfolio-wrapper {
+	overflow: hidden;
+	position: relative !important;
+	background: #fff;
+	cursor: pointer;
+}
+.portfolio img {
+	max-width: 100%;
+	position: relative;
+}
+
+.imgDescription2 {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  background:  rgba(0,0,0,0.75);
+  border:10px solid #000;
+  color: #fff;
+	width:100%;
+	height:auto;
+font-size:18px;
+	font-weight:400;
+	text-align:center;
+  visibility: hidden;
+  opacity: 0;
+  padding-top:180px;
+  transition:all 0.5s;
+  cursor:pointer;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+.portfolio:hover .imgDescription2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgDescription2 h1 {
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing:1px;
+	line-height:24px;
+	padding-bottom:5px;
+}
+.imgDescription2 p{ font-size:14px; color:#fff; font-weight:300;}
+
+.orangeline{
+	height:1px; 
+	width:50px;
+	background:#d87843;
+	display:inline-block;	
+	margin:20px auto;
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+#portfoliolist .portfolio {
+	width: 48%;
+	margin: 1%;
+}
+}
+

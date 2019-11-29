@@ -1,0 +1,293 @@
+
+
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	.homebanner {
+    min-height: 700px;
+	}
+	.homebanner h1 {
+    padding-top: 200px;
+	}
+	.homebanner p {
+    margin-bottom: 220px;
+}
+.intro p {
+    padding: 0 100px;
+}
+.lapy , .help , .quotes{
+    padding: 150px 0;
+}
+.images img {
+    margin: 0 10px;
+}
+.hire {
+    padding: 48px 40px 50px;
+    min-height: auto;
+}
+.imgDescription1 h1 {
+    padding-top: 180px;
+}
+.imgDescription1 p {padding:0;}
+.right {
+    padding: 100px 25px 100px;
+}
+.left {
+    padding: 100px 20px 100px 0;
+}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 992px) {
+	.homebanner {
+    min-height: 700px;
+	}
+	.homebanner h1 {
+    padding-top: 200px;
+	}
+	.homebanner p {
+    margin-bottom: 220px;
+}
+.intro {
+    padding: 50px 0;
+}
+.work {
+    padding: 50px 0;
+}
+#filters li span {
+    padding: 5px 10px;
+}
+.images img {
+    margin: 5px 35px;
+}
+.intro p {
+    padding: 0 0px;
+}
+.lapy , .help , .quotes{
+    padding: 150px 0;
+}
+.clients {
+    padding: 50px 0;
+}
+.team img {
+    height: 400px;
+	margin-bottom:10px;
+}
+.imgDescription1 img {
+    height: auto;
+}
+.hire {
+    padding: 90px 40px 50px;
+    min-height: 400px;
+}
+.imgDescription1 h1 {
+    padding-top: 180px;
+}
+.imgDescription1 p {padding:0;}
+.right {
+    padding: 100px 25px 100px;
+}
+.left {
+    padding: 100px 20px 100px 0;
+}
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.homebanner {
+    min-height: 600px;
+	}
+	.homebanner h1 {
+    padding-top: 200px;
+	}
+	.homebanner p {
+    margin-bottom: 150px;
+}
+span.line2 {
+    margin: 30px auto;
+}
+.intro {
+    padding: 50px 0;
+}
+.work {
+    padding: 50px 0;
+}
+#filters li span {
+    padding: 5px 10px;
+}
+.images img {
+    margin: 5px 35px;
+}
+.intro p {
+    padding: 0 0px;
+}
+.lapy , .help , .quotes{
+    padding: 100px 0;
+}
+#videoimage , #videoimage iframe{
+    min-height: 350px;
+}
+.imagecoloroverlay a {
+    margin: 150px auto 0;
+}
+.clients {
+    padding: 50px 0;
+}
+.team img {
+    height: 400px;
+	margin-bottom:10px;
+}
+.imgDescription1 img {
+    height: auto;
+}
+.hire {
+    padding: 90px 40px 50px;
+    min-height: 400px;
+}
+.imgDescription1 h1 {
+    padding-top: 180px;
+}
+.imgDescription1 p {padding:0;}
+.right {
+    padding: 50px 25px 50px;
+	    min-height: 400px;
+}
+.left {
+    padding: 50px 20px 50px 0;
+	    min-height: 400px;
+}
+footer {
+    padding: 50px 0;
+}
+		}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.homebanner {
+    min-height: 400px;
+	}
+	.homebanner h1 {
+    padding-top: 100px;
+	font-size: 29px;
+    line-height: 43px;
+	}
+	body {
+    font-size: 16px;
+    line-height: 28px;
+	}
+	.homebanner p {
+    margin-bottom: 50px;
+}
+span.line2 {
+    margin: 30px auto;
+}
+.intro {
+    padding: 30px 0px;
+}
+.intro p {
+    padding: 0 0px;
+}
+.lapy , .help , .quotes{
+    padding: 100px 0;
+}
+#videoimage , #videoimage iframe{
+    min-height: 300px;
+}
+.imagecoloroverlay a {
+    margin: 100px auto 0;
+}
+.lapy a, .help a, .quotes a {
+    padding: 15px 0px;
+    font-size: 25px;
+    max-width: 300px;
+}
+.work {
+    padding: 30px 0;
+}
+.imgDescription2 {
+    padding-top: 46%;
+}
+a.view {
+    max-width: 300px;
+}
+.clients {
+    padding: 30px 0;
+}
+.images img {
+    margin: 10px 20px;
+}
+.teamimg {
+    margin-bottom: 10px;
+}
+.team {
+    padding: 50px 0 0px;
+    margin-bottom: 0;
+}
+.left {
+    width: 100%;
+    float: none;
+    min-height: auto;
+    background: #f2f2f2;
+    padding: 30px 15px 30px;
+}
+.right {
+    width: 100%;
+    float: none;
+    min-height: auto;
+    background: #e4e4e4;
+    padding: 30px 15px 30px;
+}
+.datacon {
+    max-width: 100%;
+    float: none;
+    text-align: center;
+}
+.fielddata input {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+}
+.fielddata input[type="text"] {
+    margin-right: 0;
+}
+footer {
+    padding: 30px 0;
+}
+		}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.bt-menu ul li {
+    padding: 10px 0;
+		}
+		.homebanner h1 {
+ 
+    font-size: 22px;
+    line-height: 36px;
+}
+		footer img{width:100%;}
+		.intro h2, .work h2, .clients h2 {
+    font-size: 22px;
+    line-height: 32px;
+	    letter-spacing: 2px;
+} 
+.lapy a, .help a, .quotes a {
+    padding: 7px 0px;
+    font-size: 18px;
+    max-width: 200px;
+}
+.slidermain p {
+    padding-bottom: 10px;
+}
+	#filters li span {
+    padding: 5px 5px;
+	}
+		}
+
