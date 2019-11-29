@@ -1,0 +1,50 @@
+
+//student table
+create table stdnt(
+serialno number(3),
+userid varchar2(10),
+name varchar2(50),
+password varchar2(20)
+);
+
+insert into stdnt values(1,168,'ANUP RAY','abc');
+
+//instruction table
+create table instr(
+instruction varchar2(200)
+);
+
+insert into instr values('Bring your ID card');
+
+//admin table
+create table admin(
+userid varchar2(10),
+password varchar2(20),
+);
+
+//Question table
+create table que(
+serialno number(3),
+question varchar2(200),
+a varchar2(50),
+b varchar2(50),
+c varchar2(50),
+d varchar2(50),
+crctans varchar2(20)
+);
+
+insert into que values(1,'capital of india','bbsr','bombay','NewDelhi','cuttack','NewDelhi');
+
+//For Current Question.Default value of count is 1
+create table qc(
+count number(3)
+);
+
+
+//For counting no of attempt and correct. Default value...serialno=1,correct=0,attempt=0
+create table counter(
+serialno number(3),
+correct number(3),
+attempt number(3)
+);
+
