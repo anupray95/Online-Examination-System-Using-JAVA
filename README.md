@@ -39,3 +39,13 @@ N.B:-Make sure that you have an active internet connection.
 
 4.Oracle 11g Express edition
 
+## Developed by:-
+
+Anup Ray
+
+Samparn Patra
+
+Asish Krishna Samanta
+
+Pratyush Purohit
+
