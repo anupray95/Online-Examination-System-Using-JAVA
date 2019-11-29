@@ -1,0 +1,557 @@
+
+
+/*................................reset...........................................*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*................................clearfix...........................................*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'amblebold';
+    src: url('fonts/amble-bold.eot');
+    src: url('fonts/amble-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-bold.woff2') format('woff2'),
+         url('fonts/amble-bold.woff') format('woff'),
+         url('fonts/amble-bold.ttf') format('truetype'),
+         url('fonts/amble-bold.svg#amblebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblebold_italic';
+    src: url('fonts/amble-bolditalic.eot');
+    src: url('fonts/amble-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-bolditalic.woff2') format('woff2'),
+         url('fonts/amble-bolditalic.woff') format('woff'),
+         url('fonts/amble-bolditalic.ttf') format('truetype'),
+         url('fonts/amble-bolditalic.svg#amblebold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleitalic';
+    src: url('fonts/amble-italic.eot');
+    src: url('fonts/amble-italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-italic.woff2') format('woff2'),
+         url('fonts/amble-italic.woff') format('woff'),
+         url('fonts/amble-italic.ttf') format('truetype'),
+         url('fonts/amble-italic.svg#ambleitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight';
+    src: url('fonts/amble-light.eot');
+    src: url('fonts/amble-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-light.woff2') format('woff2'),
+         url('fonts/amble-light.woff') format('woff'),
+         url('fonts/amble-light.ttf') format('truetype'),
+         url('fonts/amble-light.svg#amblelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight_italic';
+    src: url('fonts/amble-lightitalic.eot');
+    src: url('fonts/amble-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-lightitalic.woff2') format('woff2'),
+         url('fonts/amble-lightitalic.woff') format('woff'),
+         url('fonts/amble-lightitalic.ttf') format('truetype'),
+         url('fonts/amble-lightitalic.svg#amblelight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/amble-regular.eot');
+    src: url('fonts/amble-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-regular.woff2') format('woff2'),
+         url('fonts/amble-regular.woff') format('woff'),
+         url('fonts/amble-regular.ttf') format('truetype'),
+         url('fonts/amble-regular.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*.........GLOBLE......*/
+
+body {
+	font-family: 'amblelight';
+	font-size: 22px;
+	line-height: 36px;
+	font-weight:300;
+	color:#222222;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Raleway', sans-serif;
+	font-weight:900;	
+	letter-spacing:4px;
+	text-transform:uppercase;
+}
+
+.homebanner{
+	background:url(images/banner.jpg) no-repeat center center;	
+	min-height:900px;
+	background-size:cover;
+	text-align:center;
+		color:#fff;
+}
+.homebanner span.line{
+	height:1px; 
+	width:100px;
+	background:#fff;
+	display:inline-block;	
+	margin:10px auto;
+}
+.homebanner h1{
+	text-transform:uppercase;
+	padding-top:320px;
+	font-size:48px;
+	line-height:60px;	
+}
+.homebanner p{margin-bottom:270px;}
+.intro{
+	color:#222222;
+	padding:110px 0px;
+	text-align:center;
+}
+.intro h2 , .work h2 , .clients h2{
+	font-size:30px;
+	line-height:60px;	
+}
+span.line2{
+	height:1px; 
+	width:100px;
+	background:#222222;
+	display:block;	
+	margin:50px auto;
+}
+.intro p{padding:0 200px;}
+.lapy{
+	background:url(images/lepy.jpg) no-repeat center center;
+	display:block;
+	background-size:cover;
+	padding:200px 0;	
+}
+.help{
+	background:url(images/helo.jpg) no-repeat center center;
+	display:block;
+	background-size:cover;
+	padding:200px 0;	
+}
+.quotes{
+	background:url(images/quotes.jpg) no-repeat center center;
+	display:block;
+	background-size:cover;
+	padding:200px 0;	
+}
+.lapy a, .help a , .quotes a{
+	border:3px solid #fff;
+	margin:0 auto;
+	padding:22px 0px;
+	text-align:center;
+	color:#fff;
+	font-size:30px;
+	display:block;
+	max-width:425px;	
+	font-family: 'amblebold';
+	font-weight:700;
+}
+.lapy a:hover , .help a:hover , .quotes a:hover{background:#d26748; transition:all 0.5s;}
+
+.work{
+	padding:110px 0 80px;
+	text-align:center;	
+}
+a.view{
+	border:3px solid #222;
+	margin:55px auto 0;
+	padding:10px 0px;
+	text-align:center;
+	color:#222;
+	font-size:24px;
+	display:block;
+	max-width:365px;	
+	font-family: 'amblebold';
+	font-weight:700;
+}
+a.view:hover{background:#222; transition:all 0.5s;color:#fff;}
+
+.clients{
+	background:#f4f4f4;
+	padding:110px 0;
+	text-align:center;	
+}
+.images img{display:block; display:inline-block; margin:0 35px;}
+.team{
+	padding:50px 0 0px;	
+	margin-bottom:-50px;
+}
+.team img{width:100%; display:block;}
+
+.hire{
+	padding:90px 40px 50px;
+	border:2px solid #222;
+	text-align:center;
+	min-height:350px;	
+}
+.hire h3{
+	font-size:24px;
+	letter-spacing:2px;	
+}
+.hire span.line2{margin:30px auto;}
+.hire a{
+	border:3px solid #222;
+	color:#222;
+	display:block;
+	padding:5px 0;
+	font-family: 'amblebold';
+	font-weight:700;	
+}
+.hire a:hover{background:#222; transition:all 0.5s;color:#fff;}
+.teamimg{position:relative;}
+.imgDescription1 {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  background:  rgba(0,0,0,0.75);
+  border:10px solid #000;
+  color: #fff;
+	width:100%;
+	height:auto;
+font-size:18px;
+	font-weight:400;
+	text-align:center;
+  visibility: hidden;
+  opacity: 0;
+  padding-top:0px;
+  transition:all 0.5s;
+  cursor:pointer;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+.teamimg:hover .imgDescription1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgDescription1 h1 {
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing:1px;
+	line-height:36px;
+	font-weight:700;
+	padding-top: 260px;
+}
+.imgDescription1 p{ font-size:14px; color:#fff; font-weight:300;padding:0;
+}
+.imgDescription1 img{width:auto; float:right; display:block;}
+
+
+#videoimage {
+	background: url(images/video.jpg) no-repeat center center;
+	display: block;
+	width: 100%;
+	min-height: 500px;
+	background-size: cover;
+	text-align: center;
+}
+#videoimage iframe {
+	width: 100%;
+	height: 500px;
+	float: left;
+	display: block;
+}
+.imagecoloroverlay a {
+	display: block;
+	cursor: pointer;
+	margin: 230px auto 0;
+}
+.slidermain{text-align:center; padding-bottom:70px;}
+.slidermain h3{
+	font-size:24px;	
+	font-family: 'ambleregular';
+	font-weight:400;
+	letter-spacing:1px;
+	padding:25px 0;
+}
+.slidermain p{font-size:16px;line-height:24px; padding-bottom:50px;}
+.contactus{
+		
+}
+.left{
+	width:40%;
+	float:left;	
+	min-height:500px;
+	background:#f2f2f2;
+	padding:100px 150px 100px 0;
+}
+.datacon{max-width:400px; float:right;}
+.datacon h3{
+	font-size:24px;
+	letter-spacing:1px;
+	line-height:60px;	
+}
+.datacon p{
+	font-size:22px;
+	line-height:40px;	
+}
+.datacon a i{color:#222222; font-size:26px; margin-right:20px; margin-top:20px;}
+.right{
+	width:60%;
+	float:left;	
+	min-height:500px;
+	background:#e4e4e4;
+	padding:100px 150px 100px;
+}
+.fielddata{max-width:700px;}
+.fielddata input , .fielddata textarea{border:0; border-bottom:2px solid #afafaf; background:none; outline:0; padding:5px 15px;}
+.fielddata input{width:43%; float:left;}
+.fielddata input[type="text"]{margin-right:13%;}
+.fielddata textarea{width:100%; margin-top:50px;}
+.fielddata input:focus , .fielddata textarea:focus{
+border-bottom:0px solid #ff5e05;
+	outline: none;
+  box-shadow: -6px 10px 0px -7px #ff5e05, 6px 10px 0px -7px #ff5e05;
+}
+.fielddata a{
+	display:inline-block;
+	max-width:175px;
+	border:3px solid #222222;
+	text-align:center;
+	font-size:24px;	
+	color:#222222;
+	width:100%;
+	float:right;
+	font-family: 'amblebold';
+	padding:10px 0;
+	margin-top:30px;
+}
+.fielddata a:hover{background:#222; transition:all 0.5s;color:#fff;}
+footer{
+	padding:100px 0;
+	background:#222222;
+	text-align:center;	
+}
+footer p{ color:#fff; font-size:16px;}
+footer p a{color:#d87843;}
+footer p a:hover{color:#fff; transition:all 0.5s;}
+
+
+/*EFFECTS FOR ANIMATION*/
+/*EFFECT*/
+.os-animation {
+	opacity: 0;
+}
+.os-animation.animated {
+	opacity: 1;
+}
+.staggered-animation {
+	opacity: 0;
+}
+.staggered-animation.animated {
+	opacity: 1;
+}
+
+/*LOADER EFFECT*/
+/*Paste this css to your style sheet file or under head tag*/
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: #d87843;
+}
+
+
+.cssload-square{
+	margin:auto;
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;
+	height:15px;
+	width:15px;
+	background-color:rgb(4,61,204);
+	border-radius:50%;
+	animation: cssload-s1 4.4s infinite;
+		-o-animation: cssload-s1 4.4s infinite;
+		-ms-animation: cssload-s1 4.4s infinite;
+		-webkit-animation: cssload-s1 4.4s infinite;
+		-moz-animation: cssload-s1 4.4s infinite;
+}
+
+.cssload-square div{
+	position:absolute;
+	background-color:rgba(0,0,0,0.97);
+	box-shadow: 0 0 13px rgb(76,142,255);
+		-o-box-shadow: 0 0 13px rgb(76,142,255);
+		-ms-box-shadow: 0 0 13px rgb(76,142,255);
+		-webkit-box-shadow: 0 0 13px rgb(76,142,255);
+		-moz-box-shadow: 0 0 13px rgb(76,142,255);
+	opacity:0.5;
+	width:100%;
+	height:100%;
+	top:8px;
+	right:8px;
+	animation: cssload-s1 4.4s infinite;
+		-o-animation: cssload-s1 4.4s infinite;
+		-ms-animation: cssload-s1 4.4s infinite;
+		-webkit-animation: cssload-s1 4.4s infinite;
+		-moz-animation: cssload-s1 4.4s infinite;
+	animation-timing-function: cubic-bezier(1,.45,.45,1);
+		-o-animation-timing-function: cubic-bezier(1,.45,.45,1);
+		-ms-animation-timing-function: cubic-bezier(1,.45,.45,1);
+		-webkit-animation-timing-function: cubic-bezier(1,.45,.45,1);
+		-moz-animation-timing-function: cubic-bezier(1,.45,.45,1);
+	transform-origin: 50%;
+		-o-transform-origin: 50%;
+		-ms-transform-origin: 50%;
+		-webkit-transform-origin: 50%;
+		-moz-transform-origin: 50%; 
+}
+.cssload-square div + div, .cssload-square div + div div{
+	position:absolute;
+	background-color:rgba(0,0,0,0.98);
+	height:100%;
+	width:100%;
+	top:-8px;
+	right:-8px;
+}
+.cssload-two{
+	transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	animation: cssload-s1 2.2s infinite;
+		-o-animation: cssload-s1 2.2s infinite;
+		-ms-animation: cssload-s1 2.2s infinite;
+		-webkit-animation: cssload-s1 2.2s infinite;
+		-moz-animation: cssload-s1 2.2s infinite;
+}
+
+@keyframes cssload-s1{
+	50%{
+		transform: rotate(360deg);
+		opacity:.7;
+	}
+}
+
+@-o-keyframes cssload-s1{
+	50%{
+		-o-transform: rotate(360deg);
+		opacity:.7;
+	}
+}
+
+@-ms-keyframes cssload-s1{
+	50%{
+		-ms-transform: rotate(360deg);
+		opacity:.7;
+	}
+}
+
+@-webkit-keyframes cssload-s1{
+	50%{
+		-webkit-transform: rotate(360deg);
+		opacity:.7;
+	}
+}
+
+@-moz-keyframes cssload-s1{
+	50%{
+		-moz-transform: rotate(360deg);
+		opacity:.7;
+	}
+}
+
+
+
+
+ .example_e {
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+
+.example_e:hover {
+color: rgb(255, 255, 255) !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
