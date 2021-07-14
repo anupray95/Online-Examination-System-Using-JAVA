@@ -19,7 +19,7 @@ insert into instr values('Bring your ID card');
 //admin table
 create table admin(
 userid varchar2(10),
-password varchar2(20),
+password varchar2(20)
 );
 
 //Question table
